@@ -1,0 +1,18 @@
+<div class="d-flex flex-column h-100">
+  <router-outlet></router-outlet>
+  <section class="container-fluid p-4 flex-grow-1 d-flex flex-column align-items-center flex-wrap" style="gap: 2rem;">
+    <app-validar-festivos class="w-75 mb-3 d-flex flex-column align-items-center"></app-validar-festivos>
+    
+    <app-tabla-actualizable class="w-100 d-flex justify-content-center"></app-tabla-actualizable>
+  </section>
+
+  <footer class="d-flex justify-content-between align-items-center footer p-4" style="background-color: #1e293b; color: #f8fafc;">
+    <div class="d-flex flex-column">
+      <p class="fw-bold mb-1">Descripción:</p>
+      <p class="mb-0">Proyecto Festivos Herramientas 3</p>
+    </div>
+    <div class="d-flex flex-column">
+      <p class="mb-0">Juan Hurtado</p>
+    </div>
+  </footer>
+</div>

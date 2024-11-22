@@ -1,0 +1,13 @@
+<div class="container my-4" style="max-width: 600px;">
+    <div class="d-flex mb-3 align-items-center bg-dark text-light p-3 rounded" style="gap: 10px;">
+        <label for="datepicker" class="form-label mb-0 me-2" style="width: 30%;">Seleccionar Fecha:</label>
+        <input type="date" class="form-control" id="datepicker" #FechaInput>
+        <button (click)="ValidarFestivo()" class="btn btn-success" type="button">Validar Festivo</button>
+    </div>
+
+    <div class="d-flex align-items-center bg-dark text-light p-3 rounded" style="gap: 10px;">
+        <label for="YearInput" class="form-label mb-0 me-2" style="width: 30%;">Ingresar Año:</label>
+        <input type="number" class="form-control" id="YearInput" min="1000" inputmode="numeric" #YearInput placeholder="2024">
+        <button (click)="ValidarFestivosYear()" class="btn btn-success" type="button">Obtener Festivos</button>
+    </div>
+</div>
